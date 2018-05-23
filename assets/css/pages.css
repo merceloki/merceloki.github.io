@@ -1722,18 +1722,18 @@ File: Pages
 }
 
 .flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+ /* display: flex;
+  flex-direction: row;*/
+ /* flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: center;*/
 
 }
 
  .box {
   /*flex: 1 1 450px;*/
   /*margin: auto;*/
-  width: 450px;
+  /*width: 450px;*/
 }
 
 @media screen and (min-width: 992px){

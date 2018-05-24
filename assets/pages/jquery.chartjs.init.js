@@ -24,7 +24,7 @@ File: Chartjs
         function generateChart(){
             // make chart width fit with its container
             var ww = selector.attr('width', $(container).width() );
-            var hh = selector.attr('height', $(container).height() );
+            // var hh = selector.attr('height', $(container).height() );
 
             switch(type){
                 case 'Line':
@@ -100,26 +100,77 @@ File: Chartjs
         var donutChart = {
             labels: [
                 "Desktops",
-                "Tablets",
+                "Tables",
                 "Mobiles"
             ],
             datasets: [
                 {
                     data: [300, 50, 100],
                     backgroundColor: [
-                        "#5d9cec",
-                        "#5fbeaa",
-                        "#ebeff2"
+                       "#ffb35c",
+                       "#f14545",
+                       "#00c2d9"
                     ],
                     hoverBackgroundColor: [
-                        "#5d9cec",
-                        "#5fbeaa",
-                        "#ebeff2"
+                        "#ffb35c",
+                        "#f14545",
+                        "#00c2d9"
                     ],
-                    hoverBorderColor: "#fff"
-                }]
+                    hoverBorderColor: "#fff",
+                    borderWidth: 0,
+                    SegmentShowStroke: false
+
+                }],
+            
+              
         };
-        this.respChart($("#doughnut"),'Doughnut',donutChart);
+
+        var options = {
+                responsive: true,
+                cutoutPercentage : 70,
+                // legend: false
+            }
+        
+    
+        this.respChart($("#doughnut"),'Doughnut',donutChart,options);
+
+        //donut2 chart
+        var donutChart2 = {
+            labels: [
+                "Desktops",
+                "Tables",
+                "Mobiles"
+            ],
+            datasets: [
+                {
+                    data: [300, 50, 100],
+                    backgroundColor: [
+                       "#ffb35c",
+                       "#f14545",
+                       "#00c2d9"
+                    ],
+                    hoverBackgroundColor: [
+                        "#ffb35c",
+                        "#f14545",
+                        "#00c2d9"
+                    ],
+                    hoverBorderColor: "#fff",
+                    borderWidth: 0,
+                    SegmentShowStroke: false
+
+                }],
+            
+              
+        };
+
+        var options2 = {
+                responsive: true,
+                cutoutPercentage : 70,
+                // legend: false
+            }
+        
+    
+        this.respChart($("#doughnut2"),'Doughnut',donutChart2,options2);
 
 
         //Pie chart
@@ -230,4 +281,5 @@ function($) {
     "use strict";
     $.ChartJs.init()
 }(window.jQuery);
+
 

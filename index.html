@@ -42,12 +42,7 @@
         <div class="navbar navbar-default" role="navigation">
           <div class="container">
             <div class="">
-              <div class="pull-left">
-                <button class="button-menu-mobile open-left waves-effect waves-light">
-                <i class="md md-menu"></i>
-                </button>
-                <span class="clearfix"></span>
-              </div>
+             
             </div>
             <!--/.nav-collapse -->
           </div>
@@ -62,15 +57,15 @@
             <ul>
               <li class="text-muted menu-title">Navigation</li>
               <li class="has_sub">
-                <a href="javascript:void(0);" class="waves-effect"><i class="ti-home"></i> <span> Dashboard </span> <span class="menu-arrow"></span></a>
+                <a href="javascript:void(0);" class="waves-effect"><i class="ti-bar-chart"></i> <span> Dashboard </span> <span class="menu-arrow"></span></a>
                 <ul class="list-unstyled">
                   <li><a href="index.html">Dashboard 1</a></li>
-                  <li><a href="dashboard_2.html">Dashboard 2</a></li>
+              <!--     <li><a href="dashboard_2.html">Dashboard 2</a></li>
                   <li><a href="dashboard_3.html">Dashboard 3</a></li>
-                  <li><a href="dashboard_4.html">Dashboard 4</a></li>
+                  <li><a href="dashboard_4.html">Dashboard 4</a></li> -->
                 </ul>
               </li>
-              <li class="has_sub">
+              <!-- <li class="has_sub">
                 <a href="javascript:void(0);" class="waves-effect"><i class="ti-paint-bucket"></i> <span> UI Kit </span> <span class="menu-arrow"></span> </a>
                 <ul class="list-unstyled">
                   <li><a href="ui-buttons.html">Buttons</a></li>
@@ -268,7 +263,7 @@
                   <li><a href="ecommerce-sellers.html"> Sellers</a></li>
                 </ul>
               </li>
-            </ul>
+            </ul> -->
             <div class="clearfix"></div>
           </div>
           <div class="clearfix"></div>
@@ -309,9 +304,12 @@
                   </div>
                   <div id="portlet3" class="panel-collapse collapse in">
                     <div class="portlet-body">
-                      <canvas id="doughnut" height="260"></canvas>
+                      <div id="donut-chart">
+                        <div id="donut-chart-container" class="flot-chart" style="height: 290px;">
+                        </div>
+                      </div>
                     </div>
-                    <div id="my-legend" class="legend-con"></div>
+                    <!-- <div id="my-legend" class="legend-con"></div> -->
                   </div>
                 </div>
                 <!-- /Portlet -->
@@ -326,9 +324,11 @@
                   </div>
                   <div id="portlet4" class="panel-collapse collapse in">
                     <div class="portlet-body">
-                      <canvas id="doughnut2" height="260"></canvas>
+                      <div id="donut-chart">
+                        <div id="donut-chart-container2" class="flot-chart" style="height: 290px;">
+                        </div>
+                      </div>
                     </div>
-                    <div id="my-legend" class="legend-con"></div>
                   </div>
                 </div>
               </div>
@@ -400,10 +400,12 @@
               <div class="col-md-3">
                 <div class="portlet text-center widget">
                   <!-- /primary heading -->
-                  <div class="portlet-heading">
+                  <div class="portlet-heading" style="margin-bottom: 50px;">
                     <h3 class="portlet-title text-dark"> Top Planos Vendidos </h3>
                   </div>
-                  <div class="circliful-chart m-b-30" data-startdegree="90" data-dimension="180" data-text="35%" data-info="New Clients" data-width="20" data-fontsize="10" data-percent="35" data-fgcolor="#61a9dc" data-bgcolor="#ebeff2"></div>
+                  <div class="widget-chart text-center">
+                    <input class="knob" data-width="140" data-height="140" data-linecap=round data-fgColor="#0a60ab" value="80" data-skin="tron" data-angleOffset="180" data-readOnly=true data-thickness=".25"/> 
+                  </div>
                 </div>
                 <!-- /Portlet -->
               </div>
@@ -562,9 +564,29 @@
     <script src="assets/plugins/raphael/raphael-min.js"></script>
     <script src="assets/plugins/jquery-knob/jquery.knob.js"></script>
     <script src="assets/pages/jquery.dashboard.js"></script>
+    
     <script src="assets/js/jquery.core.js"></script>
     <script src="assets/js/jquery.app.js"></script>
+   
     <script src="assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script> 
+    
+
+   <script src="assets/plugins/flot-chart/jquery.flot.min.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.time.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.tooltip.min.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.resize.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.pie.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.selection.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.stack.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.orderBars.min.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.crosshair.js"></script>
+    <script src="assets/pages/jquery.flot.init.js"></script>
+
+
+
+
+
+
     <script type="text/javascript">
       jQuery(document).ready(function($) {
           $('.counter').counterUp({

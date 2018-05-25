@@ -210,7 +210,7 @@
 
 		return plot;
 	},
-	//creates Pie Chart
+	//creates donut Chart
 	FlotChart.prototype.createDonutGraph = function(selector, labels, datas, colors) {
 		var data = [{
 			label : labels[0],
@@ -229,8 +229,14 @@
 			series : {
 				pie : {
 					show : true,
-					innerRadius : 0.5
-				}
+					innerRadius : 0.8
+				},
+				stroke: {
+					width:0,
+					color: 'none'
+				},
+				show: true,
+				radius: 0.2
 			},
 			legend : {
 				show : true,
@@ -285,6 +291,9 @@
 			}
 		}];
 		var options = {
+			// bar: {
+
+			// }
 			series : {
 				shadowSize : 0
 			},
@@ -339,32 +348,33 @@
 		var pcolors = ['#5fbeaa', '#34d3eb'];
 		var borderColor = '#f5f5f5';
 		var bgColor = '#fff';
-		this.createPlotGraph("#website-stats", uploads, downloads, plabels, pcolors, borderColor, bgColor);
+		// this.createPlotGraph("#website-stats", uploads, downloads, plabels, pcolors, borderColor, bgColor);
 
-		//Pie graph data
-		var pielabels = ["Series 1", "Series 2", "Series 3"];
-		var datas = [20, 30, 15];
-		var colors = ["#5fbeaa", "#6c85bd", "#34d3eb"];
-		this.createPieGraph("#pie-chart #pie-chart-container", pielabels, datas, colors);
+		// //Pie graph data
+		// var pielabels = ["Series 1", "Series 2", "Series 3"];
+		// var datas = [20, 30, 15];
+		// var colors = ["#5fbeaa", "#6c85bd", "#34d3eb"];
+		// this.createPieGraph("#pie-chart #pie-chart-container", pielabels, datas, colors);
 
-		//real time data representation
-		var plot = this.createRealTimeGraph('#flotRealTime', this.randomData(), ['#5fbeaa']);
-		plot.draw();
-		var $this = this;
-		function updatePlot() {
-			plot.setData([$this.randomData()]);
-			// Since the axes don't change, we don't need to call plot.setupGrid()
-			plot.draw();
-			setTimeout(updatePlot, $('html').hasClass('mobile-device') ? 1000 : 1000);
-		}
+		// //real time data representation
+		// var plot = this.createRealTimeGraph('#flotRealTime', this.randomData(), ['#5fbeaa']);
+		// plot.draw();
+		// var $this = this;
+		// function updatePlot() {
+		// 	plot.setData([$this.randomData()]);
+		// 	// Since the axes don't change, we don't need to call plot.setupGrid()
+		// 	plot.draw();
+		// 	setTimeout(updatePlot, $('html').hasClass('mobile-device') ? 1000 : 1000);
+		// }
 
-		updatePlot();
+		// updatePlot();
 
 		//Donut pie graph data
-		var donutlabels = ["Series 1", "Series 2", "Series 3", "Series 4"];
+		var donutlabels = ["Plano 1", "Plano 2", "Plano 3", "Plano 4"];
 		var donutdatas = [35, 20, 10, 20];
-		var donutcolors = ["#5fbeaa", "#ebeff2", "#34d3eb", "#6e8cd7"];
+		var donutcolors = ["#e45c0b", "#2b755a", "#1cd8f8", "#0a60ab"];
 		this.createDonutGraph("#donut-chart #donut-chart-container", donutlabels, donutdatas, donutcolors);
+		this.createDonutGraph("#donut-chart #donut-chart-container2", donutlabels, donutdatas, donutcolors);
 
 		//Combine graph data
 		var data24Hours = [[0, 201], [1, 520], [2, 337], [3, 261], [4, 157], [5, 95], [6, 200], [7, 250], [8, 320], [9, 500], [10, 152], [11, 214], [12, 364], [13, 449], [14, 558], [15, 282], [16, 379], [17, 429], [18, 518], [19, 470], [20, 330], [21, 245], [22, 358], [23, 74]];
@@ -374,7 +384,7 @@
 		var combinelabels = ["Last 24 Hours", "Last 48 Hours", "Difference"];
 		var combinedatas = [data24Hours, data48Hours, dataDifference];
 
-		this.createCombineGraph("#combine-chart #combine-chart-container", ticks, combinelabels, combinedatas);
+		// this.createCombineGraph("#combine-chart #combine-chart-container", ticks, combinelabels, combinedatas);
 	},
 
 	//init flotchart

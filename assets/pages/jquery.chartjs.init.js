@@ -83,14 +83,19 @@ File: Chartjs
         };
 
         var lineOpts = {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        max: 100,
-                        min: 20,
-                        stepSize: 10
-                    }
-                }]
+             scales: {
+              xAxes: [{
+                display: true,
+                gridLines: {
+                    display: false
+                }
+              }],
+              yAxes: [{
+                display: true,
+                gridLines: {
+                    display: false
+                }
+              }]
             }
         };
 

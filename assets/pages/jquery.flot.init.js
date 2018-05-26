@@ -235,11 +235,21 @@
 					stroke: {
 						width:0,
 						color: '#fff'
+					},
+					radius: 1,
+					label: {
+						show: false,
+						radius: 10,
+						formatter: function (label, series) {
+							// return '<button class="btn btn-primary">GPS</button>'
+						},
+
+						threshold: 0
 					}
 
+
 				},
-				show: true,
-				radius: 0.2
+				show: true
 			},
 			legend : {
 				show : true,
@@ -264,6 +274,7 @@
 		};
 
 		$.plot($(selector), data, options);
+
 	},
 	//creates Combine Chart
 	FlotChart.prototype.createCombineGraph = function(selector, ticks, labels, datas) {
@@ -510,4 +521,8 @@ $(document).ready(function() {
 		$.plot($("#ordered-bars-chart"), ds, options);
 	});
 });
+
+
+$('#center').append('<button class="btn btn-primary">GPS</button>');
+$('#center2').append('<button class="btn btn-primary">GPS</button>');
 

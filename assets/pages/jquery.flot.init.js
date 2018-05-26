@@ -225,15 +225,18 @@
 			label : labels[3],
 			data : datas[3]
 		}];
+
 		var options = {
 			series : {
 				pie : {
 					show : true,
-					innerRadius : 0.8
-				},
-				stroke: {
-					width:0,
-					color: 'none'
+					innerRadius : 0.8,
+					barWidth: 10,
+					stroke: {
+						width:0,
+						color: '#fff'
+					}
+
 				},
 				show: true,
 				radius: 0.2
@@ -250,10 +253,11 @@
 			},
 			grid : {
 				hoverable : true,
-				clickable : true
+				clickable : true,
+				borderWidth: 'top'
 			},
 			colors : colors,
-			tooltip : true,
+			tooltip : false,
 			tooltipOpts : {
 				content : "%s, %p.0%"
 			}
@@ -291,9 +295,6 @@
 			}
 		}];
 		var options = {
-			// bar: {
-
-			// }
 			series : {
 				shadowSize : 0
 			},
@@ -371,10 +372,12 @@
 
 		//Donut pie graph data
 		var donutlabels = ["Plano 1", "Plano 2", "Plano 3", "Plano 4"];
+		var donutlabels2 = ["Plano 1", "Plano 2", "Plano 3", "Plano 4"];
+
 		var donutdatas = [35, 20, 10, 20];
-		var donutcolors = ["#e45c0b", "#2b755a", "#1cd8f8", "#0a60ab"];
+		var donutcolors = ["#E23260", "#87D37C", "#F5D76E", "#0a60ab"];
 		this.createDonutGraph("#donut-chart #donut-chart-container", donutlabels, donutdatas, donutcolors);
-		this.createDonutGraph("#donut-chart #donut-chart-container2", donutlabels, donutdatas, donutcolors);
+		this.createDonutGraph("#donut-chart #donut-chart-container2", donutlabels2, donutdatas, donutcolors);
 
 		//Combine graph data
 		var data24Hours = [[0, 201], [1, 520], [2, 337], [3, 261], [4, 157], [5, 95], [6, 200], [7, 250], [8, 320], [9, 500], [10, 152], [11, 214], [12, 364], [13, 449], [14, 558], [15, 282], [16, 379], [17, 429], [18, 518], [19, 470], [20, 330], [21, 245], [22, 358], [23, 74]];

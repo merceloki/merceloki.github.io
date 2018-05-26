@@ -253,13 +253,13 @@
 			},
 			grid : {
 				hoverable : true,
-				clickable : true,
-				borderWidth: 'top'
+				clickable : true
 			},
 			colors : colors,
-			tooltip : false,
+			tooltip : true,
 			tooltipOpts : {
-				content : "%s, %p.0%"
+				content : "%s, %p.0%",
+        		defaultTheme: false
 			}
 		};
 

@@ -77,19 +77,19 @@
 
         //creating Stacked chart
         var $stckedData  = [
-            { y: 'Jan', a: 45, b: 180, c: 100 },
-            { y: 'Feb', a: 75,  b: 65, c: 80 },
-            { y: 'Mar', a: 100, b: 90, c: 56 },
-            { y: 'Apr', a: 75,  b: 65, c: 89 },
-            { y: 'May', a: 100, b: 90, c: 120 },
-            { y: 'Jun', a: 75,  b: 65, c: 110 },
-            { y: 'Jul', a: 50,  b: 40, c: 85 },
-            { y: 'Aug', a: 75,  b: 65, c: 52 },
-            { y: 'Sep', a: 50,  b: 40, c: 77 },
-            { y: 'Oct', a: 75,  b: 65, c: 90 },
-            { y: 'Nov', a: 100, b: 90, c: 130 }
+            { y: 'Jan', a: 45, b: 180, c: 100, d: 10 },
+            { y: 'Feb', a: 75,  b: 65, c: 80, d: 51 },
+            { y: 'Mar', a: 100, b: 90, c: 56, d: 122 },
+            { y: 'Apr', a: 75,  b: 65, c: 89, d: 14 },
+            { y: 'May', a: 100, b: 90, c: 120, d: 15 },
+            { y: 'Jun', a: 75,  b: 65, c: 110, d: 42 },
+            { y: 'Jul', a: 50,  b: 40, c: 85, d: 31 },
+            { y: 'Aug', a: 75,  b: 65, c: 52, d: 61 },
+            { y: 'Sep', a: 50,  b: 40, c: 77, d: 44 },
+            { y: 'Oct', a: 75,  b: 65, c: 90, d: 99 },
+            { y: 'Nov', a: 100, b: 90, c: 130, d: 22 }
         ];
-        this.createStackedChart('morris-bar-stacked', $stckedData, 'y', ['a', 'b', 'c'], ['Plano 1', 'Plano 2', 'Plano 3'], ['#E23260', '#87D37C', '#F5D76E']);
+        this.createStackedChart('morris-bar-stacked', $stckedData, 'y', ['a', 'b', 'c', 'd'], ['Plano 1', 'Plano 2', 'Plano 3', 'Plano 4'], ['#E23260', '#87D37C', '#F5D76E', '#0A60AB']);
  
         //creating donut chart
         var $donutData = [
@@ -102,15 +102,15 @@
     
         //creating bar chart
         var $barData  = [
-            { y: '2009', a: 100, b: 90 , c: 40 },
-            { y: '2010', a: 75,  b: 65 , c: 20 },
-            { y: '2011', a: 50,  b: 40 , c: 50 },
-            { y: '2012', a: 75,  b: 65 , c: 95 },
-            { y: '2013', a: 50,  b: 40 , c: 22 },
-            { y: '2014', a: 75,  b: 65 , c: 56 },
-            { y: '2015', a: 100, b: 90 , c: 60 }
+            { y: '2009', a: 100, b: 90 , c: 40, d: 12 },
+            { y: '2010', a: 75,  b: 65 , c: 20, d: 24 },
+            { y: '2011', a: 50,  b: 40 , c: 50, d: 25 },
+            { y: '2012', a: 75,  b: 65 , c: 95, d: 62 },
+            { y: '2013', a: 50,  b: 40 , c: 22, d: 82 },
+            { y: '2014', a: 75,  b: 65 , c: 56, d: 12 },
+            { y: '2015', a: 100, b: 90 , c: 60, d: 22 }
         ];
-        this.createBarChart('morris-bar-example', $barData, 'y', ['a', 'b', 'c'], ['Plano 1', 'Plano 2', 'Plano 3'], ['#5fbeaa', '#5d9cec', '#ebeff2']);
+        this.createBarChart('morris-bar-example2', $barData, 'y', ['a', 'b', 'c', 'd'], ['Plano 1', 'Plano 2', 'Plano 3', 'Plano 4'], ['#E23260', '#87D37C', '#F5D76E', '#0A60AB']);
 
         //creating area chart
         var $areaDotData = [
@@ -135,3 +135,5 @@ function($) {
     "use strict";
     $.Dashboard1.init();
 }(window.jQuery);
+
+

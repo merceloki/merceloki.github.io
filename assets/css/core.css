@@ -24,7 +24,7 @@
 }
 
 body {
-  background: #dce3e8;
+  background: #888888;
   font-family: Verdana, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0;
   overflow-x: hidden;
@@ -120,7 +120,7 @@ a:focus {
   width: 100%;
 /*  max-width: 1170px;
   margin: 0px auto;*/
-  background-color: #ebeff2;
+  background-color: #DCDCDC;
   box-shadow: -2px 3px 25px rgba(0, 0, 0, 0.07);
 }
 .page {
@@ -348,13 +348,13 @@ a:focus {
 }
 /* Card Box */
 .card-box {
-  padding: 20px;
+  padding: 15px;
   border: 1px solid rgba(54, 64, 74, 0.05);
   -webkit-border-radius: 5px;
   border-radius: 5px;
   -moz-border-radius: 5px;
   background-clip: padding-box;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   background-color: #ffffff;
 }
 /* Grid page */
@@ -1293,7 +1293,6 @@ pre {
   background: #ffffff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   position: absolute;
-  top: 60px;
   background-color: #36404a;
 }
 body.fixed-left .side-menu.left {
@@ -1309,8 +1308,8 @@ body.fixed-left .side-menu.left {
   overflow: hidden;
 }
 .content-page > .content {
-  margin-bottom: 60px;
-  margin-top: 60px;
+  /*margin-bottom: 60px;*/
+  /*margin-top: 60px;*/
   padding: 20px 5px 15px 5px;
 }
 .button-menu-mobile {
@@ -1392,7 +1391,7 @@ body.fixed-left .side-menu.left {
   border-left: 3px solid #36404a;
 }
 #sidebar-menu > ul > li > a:hover {
-  color: #5fbeaa;
+  color: #2b333b;
   text-decoration: none;
 }
 #sidebar-menu > ul > li > a > span {
@@ -1444,9 +1443,10 @@ body.fixed-left .side-menu.left {
   margin: 3px 0 0 0;
 }
 #sidebar-menu > ul > li > a.active {
-  background: #2b333b    !important;
-  border-left: 3px solid #5fbeaa;
-  color: #5fbeaa !important;
+  background: #fff    !important;
+  border-left: 5px solid #2b333b;
+  color: #2b333b !important;
+
 }
 .menu-title {
   padding: 12px 20px !important;
@@ -1491,13 +1491,14 @@ body.fixed-left .side-menu.left {
   border-bottom: 1px solid #dee2e8;
   margin: -25px -20px 22px -20px;
   padding: 25px 20px 0px 20px;
+  
 }
 #wrapper.enlarged .menu-title,
 #wrapper.enlarged .menu-arrow {
   display: none !important;
 }
 #wrapper.enlarged #sidebar-menu ul ul {
-  border: 2px solid #2b333b ;
+  /*border: 2px solid #fff ;*/
   margin-top: -5px;
   padding-top: 5px;
   z-index: 9999;
@@ -1511,10 +1512,10 @@ body.fixed-left .side-menu.left {
   padding: 15px 20px;
 }
 #wrapper.enlarged .left.side-menu #sidebar-menu > ul > li > a:hover {
-  background: #2b333b!important;
+  background: #fff!important;
 }
 #wrapper.enlarged .left.side-menu #sidebar-menu > ul > li > a:active {
-  background: #2b333b!important;
+  background: #fff!important;
 }
 #wrapper.enlarged .left.side-menu #sidebar-menu > ul > li > a:focus {
   background: #2b333b!important;
@@ -1538,9 +1539,9 @@ body.fixed-left .side-menu.left {
 #wrapper.enlarged .left.side-menu #sidebar-menu ul > li:hover > a {
   position: relative;
   width: 260px;
-  background: #2b333b ;
-  color: #5fbeaa;
-  border-color: #5fbeaa;
+  background: #fff ;
+  color: #2b333b;
+  border-color: #2b333b;
 }
 #wrapper.enlarged .left.side-menu #sidebar-menu ul > li:hover > ul {
   display: block;

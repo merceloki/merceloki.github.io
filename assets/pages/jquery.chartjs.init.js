@@ -59,17 +59,17 @@ File: Chartjs
             labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro"],
             datasets: [
                 {
-                    label: "Vendas",
+                    label: "",
                     fill: false,
                     lineTension: 0.1,
-                    backgroundColor: "#5d9cec",
+                    backgroundColor: "#fff",
                     borderColor: "#5d9cec",
                     borderCapStyle: 'butt',
                     borderDash: [],
                     borderDashOffset: 0.0,
                     borderJoinStyle: 'miter',
                     pointBorderColor: "#5d9cec",
-                    pointBackgroundColor: "#fff",
+                    pointBackgroundColor: "#5d9cec",
                     pointBorderWidth: 1,
                     pointHoverRadius: 5,
                     pointHoverBackgroundColor: "#5d9cec",
@@ -79,7 +79,12 @@ File: Chartjs
                     pointHitRadius: 10,
                     data: [65, 59, 80, 81, 56, 55, 40, 35, 30]
                 }
-            ]
+            ],
+            options: {
+                legend: {
+                  display: false
+              }
+            }
         };
 
         var lineOpts = {

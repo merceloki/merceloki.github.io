@@ -147,7 +147,7 @@
             { y: '2014', a: 75,  b: 65 , c: 56 },
             { y: '2015', a: 100, b: 90 , c: 60 }
         ];
-        this.createBarChart('morris-bar-example', $barData, 'y', ['a', 'b', 'c'], ['Series A', 'Series B', 'Series C'], ['#5fbeaa', '#5d9cec', '#ebeff2']);
+        this.createBarChart('morris-bar', $barData, 'y', ['a', 'b', 'c'], ['Series A', 'Series B', 'Series C'], ['#5fbeaa', '#5d9cec', '#ebeff2']);
 
         //creating Stacked chart
         var $stckedData  = [

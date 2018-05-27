@@ -97,8 +97,8 @@
                 {label: "Assoc. 1", value: 30},
                 {label: "Assoc. 2", value: 20}
             ];
-        this.createDonutChart('morris-donut-example', $donutData, ['#ebeff2', '#5fbeaa', '#5d9cec']);
-        this.createDonutChart('morris-donut-pontos-assoc-mes', $donutData, ['#ebeff2', '#5fbeaa', '#5d9cec']);
+        // this.createDonutChart('morris-donut-example', $donutData, ['#ebeff2', '#5fbeaa', '#5d9cec']);
+        // this.createDonutChart('morris-donut-pontos-assoc-mes', $donutData, ['#ebeff2', '#5fbeaa', '#5d9cec']);
     
         //creating bar chart
         var $barData  = [
@@ -110,7 +110,8 @@
             { y: '2014', a: 75,  b: 65 , c: 56, d: 12 },
             { y: '2015', a: 100, b: 90 , c: 60, d: 22 }
         ];
-        this.createBarChart('morris-bar-example2', $barData, 'y', ['a', 'b', 'c', 'd'], ['Plano 1', 'Plano 2', 'Plano 3', 'Plano 4'], ['#E23260', '#87D37C', '#F5D76E', '#0A60AB']);
+        this.createBarChart('bar-chart-socio-cidade', $barData, 'y', ['a', 'b', 'c', 'd'], ['Plano 1', 'Plano 2', 'Plano 3', 'Plano 4'], ['#E23260', '#87D37C', '#F5D76E', '#0A60AB']);
+        this.createBarChart('bar-chart-socio-mes', $barData, 'y', ['a', 'b', 'c', 'd'], ['Plano 1', 'Plano 2', 'Plano 3', 'Plano 4'], ['#E23260', '#87D37C', '#F5D76E', '#0A60AB']);
 
         //creating area chart
         var $areaDotData = [
@@ -122,7 +123,7 @@
                 { y: '2014', a: 75,  b: 65, c:30 },
                 { y: '2015', a: 90, b: 60, c:30 }
             ];
-        this.createAreaChartDotted('morris-area-with-dotted', 0, 0, $areaDotData, 'y', ['a', 'b', 'c'], ['Desktops ', 'Tablets ', 'Mobiles '],['#ffffff'],['#999999'], ['#5fbeaa', '#5d9cec','#ebeff2']);
+        // this.createAreaChartDotted('morris-area-with-dotted', 0, 0, $areaDotData, 'y', ['a', 'b', 'c'], ['Desktops ', 'Tablets ', 'Mobiles '],['#ffffff'],['#999999'], ['#5fbeaa', '#5d9cec','#ebeff2']);
 
     },
 

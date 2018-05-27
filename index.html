@@ -290,7 +290,8 @@
                 <div class="portlet">
                   <!-- /primary heading -->
                   <div class="portlet-heading">
-                    <h3 class="portlet-title text-dark"> Pontos de Associação(ranking)</h3>
+                    <h3 class="portlet-title text-dark">Pontos de Associação(ranking)</h3>
+
                   </div>
                   <div id="portlet3" class="panel-collapse collapse in">
                     <div class="portlet-body">
@@ -299,10 +300,7 @@
                         </div>
                       </div>
                         <!-- <div id="center"></div> -->
-                       <label class="switch pull-right">
-                        <input type="checkbox" id="donut1switch">
-                        <span class="slider round"></span>
-                      </label>
+                     
                     </div>
                   </div>
                 </div>
@@ -314,9 +312,11 @@
                 <div class="portlet">
                   <!-- /primary heading -->
                   <div class="portlet-heading">
-                    <h3 class="portlet-title text-dark"> Pontos de Associação(ranking/Mês) </h3>
+                    <h3 id="pontoAssocTitle" class="portlet-title text-dark ">Pontos de Associação(ranking/Mês) </h3>
+                    <h3 id="socioCidadeTitle" class="portlet-title text-dark">Sócios por cidade</h3>
+
                     <label class="switch pull-right">
-                        <input type="checkbox" id="donut2switch">
+                        <input type="checkbox" id="donut2switch" style="margin-bottom: 5px;">
                         <span class="slider round"></span>
                     </label>
                   </div>
@@ -325,12 +325,9 @@
                       <div id="donut-chart">
                         <div id="donut-chart-container2" class="flot-chart" style="height: 35vh;">
                         </div>
+                      <div id="bar-chart-socio-cidade" class="" style="height: 31vh;margin-top: 25px;"></div>
 
                       </div>
-                      <!-- <div id="morris-bar" class="" style="height: 35vh;"></div> -->
-
-
-                    <div style="margin-bottom: 25px;"></div>
                     </div>
                   </div>
                 </div>
@@ -347,7 +344,7 @@
 
                 <div class="card-box widget">
                   <div class="widget-chart text-center">
-                    <input class="knob" data-width="100" data-height="85" data-linecap=round data-fgColor="#5fbeaa" value="60" data-skin="tron" data-angleOffset="180" data-readOnly=true data-thickness=".15"/> 
+                    <input class="knob" data-width="100" data-height="100" data-linecap=round data-fgColor="#5fbeaa" value="60" data-skin="tron" data-angleOffset="180" data-readOnly=true data-thickness=".15"/> 
                   </div>
                 </div>
 
@@ -375,8 +372,15 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card-box widget">
-                  <h4 class="text-dark header-title m-t-0">Planos mais vendidos</h4>
+                <div class="portlet widget">
+                  <div class="portlet-heading">
+                    <h4 id="planosMaisVendidosTitle" class="portlet-title text-dark header-title m-t-0">Planos mais vendidos</h4>
+                    <h4 id="socioAdimpMesTitle" class="portlet-title text-dark header-title m-t-0">Socios adimplentes(mes)</h4>
+                    <label class="switch pull-right">
+                        <input type="checkbox" id="donut1switch">
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
                   <div class="text-center">
                     <ul class="list-inline chart-detail-list">
                       <li>
@@ -394,8 +398,11 @@
                     </ul>
                   </div>
                   <div id="morris-bar-stacked" class="item" style="height: 150px;"></div>
+                  <div id="bar-chart-socio-mes" style="height: 150px;"></div>
                 </div>
               </div>
+
+
               <div class="col-md-3">
                 <div class="card-box widget">
                   <h4 class="text-dark header-title m-t-0">Socios Associados</h4>
@@ -598,13 +605,29 @@
 
 <script type="text/javascript" charset="utf-8" async defer>
   jQuery(document).ready(function(){
-    $("#donut1switch").click(function(){
-        $("#donut-chart-container").toggle();
+    $('#bar-chart-socio-cidade').hide();
+    $('#donut2switch').click(function(){
+        $('#bar-chart-socio-cidade, #donut-chart-container2').toggle();
     });
 
-    $("#donut2switch").click(function(){
-        $("#donut-chart-container2").toggle();
+    $('#socioCidadeTitle').hide();
+    $('#donut2switch').click(function(){
+        $('#socioCidadeTitle, #pontoAssocTitle').toggle();
     });
+
+
+    $('#bar-chart-socio-mes').hide();
+    $('#donut1switch').click(function(){
+        $('#bar-chart-socio-mes, #morris-bar-stacked').toggle();
+    });
+
+    $('#socioAdimpMesTitle').hide();
+    $('#donut1switch').click(function(){
+        $('#planosMaisVendidosTitle, #socioAdimpMesTitle').toggle();
+    });
+
+
+
   });
 </script>
 

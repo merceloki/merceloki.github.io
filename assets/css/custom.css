@@ -56,17 +56,9 @@
   width: 184px;
   }
 
-/*  .grid-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
-  grid-auto-rows: minmax(290px, 100%);
-}
-
-.grid-item {
-  display: grid;
-  grid-gap: 1em;
-  grid-auto-rows: minmax();
- }*/
+#sidebar-menu, #sidebar-menu ul, #sidebar-menu li, #sidebar-menu a {
+  margin-bottom: 90%;
+  }
 }
 
 

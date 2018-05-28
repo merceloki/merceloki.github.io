@@ -225,7 +225,7 @@
 			label : labels[3],
 			data : datas[3]
 		}];
-
+var i =1;
 		var options = {
 			series : {
 				pie : {
@@ -238,10 +238,15 @@
 					},
 					radius: 1,
 					label: {
-						show: false,
-						radius: 10,
+						show: true,
+						radius: 5,
 						formatter: function (label, series) {
-							// return '<button class="btn btn-primary">GPS</button>'
+							if (i == 1) {
+								i++;
+								return '<button class="btn btn-primary">GPS</button>';
+							}else {
+								return '';
+							}
 						},
 
 						threshold: 0

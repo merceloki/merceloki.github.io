@@ -238,7 +238,7 @@ var i =1;
 					},
 					radius: 1,
 					label: {
-						show: true,
+						show: false,
 						radius: 5,
 						formatter: function (label, series) {
 							if (i == 1) {
@@ -396,8 +396,8 @@ var i =1;
 
 		var donutdatas = [35, 20, 10, 20];
 		var donutcolors = ["#E23260", "#87D37C", "#F5D76E", "#0a60ab"];
-		this.createDonutGraph("#donut-chart #donut-chart-container", donutlabels, donutdatas, donutcolors);
-		// this.createDonutGraph("#donut-chart #donut-chart-container2", donutlabels2, donutdatas, donutcolors);
+		// this.createDonutGraph("#donut-chart #donut-chart-container", donutlabels, donutdatas, donutcolors);
+		this.createDonutGraph("#donut-chart #donut-chart-container2", donutlabels2, donutdatas, donutcolors);
 
 		//Combine graph data
 		var data24Hours = [[0, 201], [1, 520], [2, 337], [3, 261], [4, 157], [5, 95], [6, 200], [7, 250], [8, 320], [9, 500], [10, 152], [11, 214], [12, 364], [13, 449], [14, 558], [15, 282], [16, 379], [17, 429], [18, 518], [19, 470], [20, 330], [21, 245], [22, 358], [23, 74]];
@@ -530,8 +530,4 @@ $(document).ready(function() {
 		$.plot($("#ordered-bars-chart"), ds, options);
 	});
 });
-
-
-$('#center').append('<button class="btn btn-primary">GPS</button>');
-$('#center2').append('<button class="btn btn-primary">GPS</button>');
 

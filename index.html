@@ -34,20 +34,16 @@
       <div class="left side-menu">
         <div class="sidebar-inner slimscrollleft">
           <!--- Divider -->
-          <div id="sidebar-menu">
-            <ul>
-              <li class="text-muted menu-title"></li>
-              <li class="">
+          <div id="sidebar-menu" style="height: 100%;">
+            <ul class="menu-spaced">
+              <li class="m-b-0" style="margin-top: -70%;">
                 <a href="javascript:void(0);" class="waves-effect"><i class="ti-power-off"></i></a>
                
               </li>
-              <li class="has_sub">
+              <li class="has_sub ">
                 <a href="javascript:void(0);" class="waves-effect"><i class="ti-bar-chart"></i> <span> Dashboard </span> <span class="menu-arrow"></span></a>
                 <ul class="list-unstyled">
                   <li><a href="index.html">Dashboard 1</a></li>
-              <!--     <li><a href="dashboard_2.html">Dashboard 2</a></li>
-                  <li><a href="dashboard_3.html">Dashboard 3</a></li>
-                  <li><a href="dashboard_4.html">Dashboard 4</a></li> -->
                 </ul>
               </li>
               <li class="has_sub">
@@ -332,7 +328,8 @@
               <div class="col-md-2">
                 <div class="widget-bg-color-icon card-box fadeInDown animated widget">
                   <div class="text-center">
-                    <img style="display: inline-block;" src="assets/images/triangle-16.png" alt="">
+                    <span style="display: block" class="text-muted">Nome do PA</span>
+                    <img style="display: inline-block;margin-bottom: 8px;" src="assets/images/triangle-16.png" alt="">
                     <h3 style="display: inline-block;" class="text-dark"><b class="counter">100</b></h3>
                     <span style="display: block" class="text-muted"><small>PA de maior crescimento</small></span>
                     <span class="text-muted"><small>ranking/mes)</small></span>
@@ -342,7 +339,7 @@
 
                 <div class="card-box widget">
                   <div class="widget-chart text-center">
-                    <span class="text-muted">Meios de Associação(%)</span>
+                    <span class="text-muted" style="margin-top: 5px;margin-bottom: 10px; display: block;">Meios de Associação(%)</span>
                     <input class="knob" data-width="80" data-height="80" data-linecap=round data-fgColor="#5fbeaa" value="60" data-skin="tron" data-angleOffset="180" data-readOnly=true data-thickness=".15"/> 
                   </div>
                 </div>
@@ -396,8 +393,8 @@
                       </li>
                     </ul>
                   </div>
-                  <div id="morris-bar-stacked" class="item" style="height: 130px;"></div>
-                  <div id="bar-chart-socio-mes" style="height: 134px;"></div>
+                  <div id="morris-bar-stacked" class="item" style="height: 20vh;"></div>
+                  <div id="bar-chart-socio-mes" style="height: 20vh;"></div>
                 </div>
               </div>
 
@@ -405,7 +402,7 @@
               <div class="col-md-3">
                 <div class="card-box widget">
                   <h4 class="text-dark header-title m-t-0">Socios Associados</h4>
-                  <canvas id="lineChart" height="200"></canvas>
+                  <canvas id="lineChart" class="item" height="225vh"></canvas>
                 </div>
               </div>
               <!-- col -->
@@ -413,7 +410,7 @@
                 <div class="portlet text-center widget">
                   <!-- /primary heading -->
                   <div class="portlet-heading ">
-                    <h3 class="portlet-title text-dark "> Planos mais comprados </h3>
+                    <h3 class="portlet-title text-dark " style="margin-top: -6px;"> Planos mais comprados </h3>
                   </div>
                  
                   <div class="circliful-chart circliful item" data-dimension="150" data-text="72%" data-info="" data-width="30" data-fontsize="24" data-percent="72" data-fgcolor="#7266ba" data-bgcolor="#ebeff2"></div>
@@ -428,9 +425,7 @@
           <!-- container -->
         </div>
         <!-- content -->
-        <footer class="footer text-right">
-         
-        </footer>
+   
       </div>
       <!-- ============================================================== -->
       <!-- End Right content here -->

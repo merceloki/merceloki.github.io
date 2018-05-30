@@ -1518,7 +1518,8 @@ body.fixed-left .side-menu.left {
   background: #fff!important;
 }
 #wrapper.enlarged .left.side-menu #sidebar-menu > ul > li > a:focus {
-  background: #2b333b!important;
+/*  background: #2b333b!important;
+  color: #ccc;*/
 }
 #wrapper.enlarged .left.side-menu #sidebar-menu > ul > li > a i {
   margin-right: 20px !important;
@@ -1538,13 +1539,13 @@ body.fixed-left .side-menu.left {
 }
 #wrapper.enlarged .left.side-menu #sidebar-menu ul > li:hover > a {
   position: relative;
-  width: 260px;
+  width: 70px;
   background: #fff ;
   color: #2b333b;
   border-color: #2b333b;
 }
 #wrapper.enlarged .left.side-menu #sidebar-menu ul > li:hover > ul {
-  display: block;
+  display: none;
   left: 70px;
   position: absolute;
   width: 190px;

@@ -1341,7 +1341,7 @@ body.fixed-left .side-menu.left {
 }
 #sidebar-menu {
   padding-bottom: 30px;
-  padding-top: 30px;
+  padding-top: 0;
   width: 100%;
 }
 #sidebar-menu .nav > li > a .badge {

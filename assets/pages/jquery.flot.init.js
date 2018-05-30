@@ -243,7 +243,7 @@ var i =1;
 						formatter: function (label, series) {
 							if (i == 1) {
 								i++;
-								return '<button class="btn btn-primary">GPS</button>';
+								return '<button class=" btn-gps">GPS</button>';
 							}else {
 								return '';
 							}

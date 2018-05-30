@@ -123,6 +123,14 @@ input:checked + .slider:before {
 
 
 html, body {
-  height: 100vh;    
+  height: 100vh;  
+  overflow: hidden;  
 }
 
+.btn-gps {
+  background: #ccc;
+  color: #222;
+  border: 1px solid #333;
+  border-radius: 50%;
+  padding: 13px;
+}

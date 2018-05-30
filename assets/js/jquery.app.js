@@ -35,7 +35,7 @@
     //menu item click
     Sidemenu.prototype.menuItemClick = function(e) {
        if(!$("#wrapper").hasClass("enlarged")){
-        if($(this).parent().hasClass("has_sub")) {
+        if($(this).parent().hasClass("has_subb")) {
 
         }   
         if(!$(this).hasClass("subdrop")) {
@@ -47,7 +47,7 @@
           // open our new menu and add the open class
           $(this).next("ul").slideDown(350);
           $(this).addClass("subdrop");
-          $(".pull-right i",$(this).parents(".has_sub:last")).removeClass("md-add").addClass("md-remove");
+          $(".pull-right i",$(this).parents(".has_subb:last")).removeClass("md-add").addClass("md-remove");
           $(".pull-right i",$(this).siblings("ul")).removeClass("md-remove").addClass("md-add");
         }else if($(this).hasClass("subdrop")) {
           $(this).removeClass("subdrop");
@@ -74,7 +74,7 @@
       $this.$menuItem.on(event, $this.menuItemClick);
 
       // NAVIGATION HIGHLIGHT & OPEN PARENT
-      $("#sidebar-menu ul li.has_sub a.active").parents("li:last").children("a:first").addClass("active").trigger("click");
+      $("#sidebar-menu ul li.has_subb a.active").parents("li:last").children("a:first").addClass("active").trigger("click");
     },
 
     //init Sidemenu

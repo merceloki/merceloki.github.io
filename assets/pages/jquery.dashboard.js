@@ -91,8 +91,26 @@
             { y: 'Dec', a: 0, b: 0, c: 0, d: 22 }
 
         ];
+
+        var $stckedDataSocioPorCidade  = [
+            { y: 'Jan', a: 30, b: 80},
+            // { y: 'Feb', a: 75,  b: 65, c: 80, d: 51 },
+            // { y: 'Mar', a: 100, b: 90, c: 56, d: 122 },
+            // { y: 'Apr', a: 190,  b: 0, c: 0, d: 0 },
+            { y: 'May', a: 100, b: 40},
+            // { y: 'Jun', a: 75,  b: 65, c: 110, d: 42 },
+            // { y: 'Jul', a: 50,  b: 40, c: 85, d: 31 },
+            // { y: 'Aug', a: 75,  b: 65, c: 52, d: 61 },
+            { y: 'Sep', a: 200,  b: 50},
+            // { y: 'Oct', a: 75,  b: 65, c: 90, d: 99 },
+            // { y: 'Nov', a: 100, b: 90, c: 130, d: 22 },
+            { y: 'Dec', a: 100, b: 40}
+
+        ];
+
         this.createStackedChart('morris-bar-stacked', $stckedData, 'y', ['a', 'b', 'c', 'd'], ['Plano 1', 'Plano 2', 'Plano 3', 'Plano 4'], ['#E23260', '#87D37C', '#F5D76E', '#0A60AB']);
- 
+        this.createStackedChart('morris-bar-stacked-socio-por-cidade', $stckedDataSocioPorCidade, 'y', ['a', 'b'], ['Adimplencia', 'Qntd'], ['#09d261', '#0A60AB']);
+        
         //creating donut chart
         var $donutData = [
                 {label: "Assoc. 3", value: 12},

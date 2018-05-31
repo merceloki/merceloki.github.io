@@ -300,11 +300,25 @@
                     </label>
                   </div>
                   <div id="portlet4" class="panel-collapse collapse in">
-                    <div class="portlet-body">
+                    <div class="portlet-body clearfix">
+                      <div id="socioPorCidadeLegenda" class="">
+                        <ul class="list-inline chart-detail-list">
+                          <li>
+                            <i class="fa fa-circle m-r-5" style="color: #09d261;"></i>Adimplencia
+                          </li>
+                          <li>
+                            <i class="fa fa-circle m-r-5" style="color: #0A60AB;"></i>Qntd
+                          </li>
+                         
+                        </ul>
+                      </div>
                       <div id="donut-chart">
                         <div id="donut-chart-container2" class="flot-chart" style="height: 41vh;">
                         </div>
-                      <div id="bar-chart-socio-cidade" class="" style="height: 37vh;margin-top: 25px;"></div>
+                      <!-- <div id="bar-chart-socio-cidade" class="" style="height: 37vh;margin-top: 25px;"></div> -->
+
+                      <div id="morris-bar-stacked-socio-por-cidade" class="" style="height: 36vh;margin-top: 5px;"></div>
+
 
                       </div>
                     </div>
@@ -590,14 +604,19 @@
 
 <script type="text/javascript" charset="utf-8" async defer>
   jQuery(document).ready(function(){
-    $('#bar-chart-socio-cidade').hide();
+    $('#morris-bar-stacked-socio-por-cidade').hide();
     $('#donut2switch').click(function(){
-        $('#bar-chart-socio-cidade, #donut-chart-container2').toggle();
+        $('#morris-bar-stacked-socio-por-cidade, #donut-chart-container2').toggle();
     });
 
     $('#socioCidadeTitle').hide();
     $('#donut2switch').click(function(){
         $('#socioCidadeTitle, #pontoAssocTitle').toggle();
+    });
+
+    $('#socioPorCidadeLegenda').hide();
+    $('#donut2switch').click(function(){
+        $('#socioPorCidadeLegenda').toggle();
     });
 
 

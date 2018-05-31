@@ -60,9 +60,29 @@
 #sidebar-menu, #sidebar-menu ul, #sidebar-menu li, #sidebar-menu a {
   /*margin-bottom: 200%;*/
   }
+
+.menu-item {
+  height: 31vh;
+  }
+
+.menu-icon {
+  margin-top: 12vh;
+  }
+
+  html, body {
+  height: 100vh;  
+  overflow: hidden;  
+  }
+
+
 }
 
-
+.pa-icon {
+    font-style: normal;
+    font-size: 15px !important;
+    font-weight: 700;
+    margin-left: 0 !important;
+}
 /* The switch - the box around the slider */
 .switch {
   position: relative;
@@ -123,10 +143,7 @@ input:checked + .slider:before {
 }
 
 
-html, body {
-  height: 100vh;  
-  overflow: hidden;  
-}
+
 
 .btn-gps {
   background: #ccc;
@@ -142,10 +159,7 @@ html, body {
   list-style: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /*justify-content: space-around;*/
   margin: 0;
 }
 
-.menu-item {
-  margin-top: -70%;
-}

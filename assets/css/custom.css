@@ -38,6 +38,7 @@
 .flot-chart .legend table {
   top: 100px !important;
   right: -66% !important;
+  width: 50%;
 }
 
 .flot-chart .legend table .legendColorBox div div {

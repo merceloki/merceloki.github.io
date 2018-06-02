@@ -1,7 +1,7 @@
 @media(min-width: 992px) {
 
 .portlet-body-socio-cidade-fix {
-  height: 45vh;
+  height: 46vh;
 }
 
 .widget {
@@ -37,7 +37,7 @@
 
 .flot-chart .legend table {
   top: 100px !important;
-  right: -65% !important;
+  right: -66% !important;
 }
 
 .flot-chart .legend table .legendColorBox div div {

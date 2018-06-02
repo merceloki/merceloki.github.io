@@ -1,5 +1,8 @@
 @media(min-width: 992px) {
 
+.portlet-body-socio-cidade-fix {
+  height: 45vh;
+}
 
 .widget {
   flex: 1;

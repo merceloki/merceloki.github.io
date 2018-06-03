@@ -182,3 +182,46 @@ input:checked + .slider:before {
   font-size: 16px;
   margin-left: 4px;
 }
+
+/********************
+  Socios Page
+********************/
+.page-title {
+  margin-bottom: 40px;
+}
+
+.contact-card .img-wrapper {
+  display: block;
+} 
+
+.observations {
+  text-align: center;
+}
+
+/***
+* Right Sidebar
+*/
+.sidemenu.right {
+  padding: 30px 15px;
+}
+
+.sidemenu.right .bottom-sidebar {
+  position: absolute;
+  bottom: 30px;
+}
+
+@media (min-width:  992px) {
+  .content-page.right-sidebar {
+    margin-right: 300px;
+  }
+
+  .sidemenu.right {
+    width: 300px;
+    position: fixed;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+  }  
+}
+

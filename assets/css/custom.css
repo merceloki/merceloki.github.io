@@ -76,8 +76,14 @@
 
   .no-scroll {
     height: 100vh;  
-    overflow: hidden;  
+    overflow: hidden;   
   }
+
+  .scroll {
+    overflow-y: scroll;
+    height: 100vh;
+  }
+
 
 
 }
@@ -225,3 +231,24 @@ input:checked + .slider:before {
   }  
 }
 
+.b-r-20 {
+  border-radius: 20px !important;
+}
+
+.card-info {
+  border: 1px solid #999;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 8px;
+  display: inline-block;
+
+}
+
+.text-darker {
+  color: #333;
+}
+
+.card-center {
+  width: 42vw;
+  margin: 10px auto;
+}

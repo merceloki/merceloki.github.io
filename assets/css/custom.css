@@ -281,7 +281,7 @@ input:checked + .slider:before {
   
 }
 .select-img {
-  /*background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat #eee;*/
+  background: url(../images/arrow.png) 96% / 15% no-repeat #eee;
   /*border-left: 1px solid #333;*/
   /*float: left;*/
 }

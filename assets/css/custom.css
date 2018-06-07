@@ -236,12 +236,12 @@ input:checked + .slider:before {
 }
 
 .card-info {
-  border: 1px solid #999;
+  border: 2px solid #333;
   margin: 0 auto;
   border-radius: 8px;
   padding: 8px;
   display: inline-block;
-
+  margin-bottom: -2px;
 }
 
 .text-darker {
@@ -251,4 +251,50 @@ input:checked + .slider:before {
 .card-center {
   width: 42vw;
   margin: 10px auto;
+}
+
+.border-dark {
+  border: 2px solid #333;
+}
+
+.card-icon {
+  object-fit: contain;
+  width: 2vw !important;
+  height: 7vh !important;
+}
+
+.sidebar-left-br {
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+}
+
+.select {
+  margin: 50px;
+  width: 150px;
+  padding: 5px 35px 5px 5px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  height: 34px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
+}
+.select-img {
+  /*background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat #eee;*/
+  /*border-left: 1px solid #333;*/
+  /*float: left;*/
+}
+
+/* CAUTION: IE hackery ahead */
+.select::-ms-expand { 
+    display: none; /* remove default arrow on ie10 and ie11 */
+}
+
+/* target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width:0\0) {
+    .select {
+        background:none\9;
+        padding: 5px\9;
+    } 
 }

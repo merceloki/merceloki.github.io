@@ -168,6 +168,9 @@ a:focus {
 .p-0 {
   padding: 0px !important;
 }
+.p-5 {
+  padding: 5px !important;
+}
 .p-20 {
   padding: 20px !important;
 }

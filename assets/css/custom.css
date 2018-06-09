@@ -316,7 +316,8 @@ input:checked + .slider:before {
 
 .debito {
   padding: 3px;
-  border-radius: 8px
+  border-radius: 8px;
+  margin-left:12px !important;
 }
 
 body {

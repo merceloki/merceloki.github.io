@@ -202,6 +202,8 @@ input:checked + .slider:before {
 
 .observations {
   text-align: center;
+  background: #ffff99;
+
 }
 
 /***
@@ -251,7 +253,7 @@ input:checked + .slider:before {
 }
 
 .card-center {
-  width: 42vw;
+  width: 48vw;
   margin: 10px auto;
 }
 
@@ -313,10 +315,28 @@ input:checked + .slider:before {
 }
 
 .debito {
-      padding: 3px;
-    border-radius: 8px
+  padding: 3px;
+  border-radius: 8px
 }
 
 body {
   color: #333 !important;
+}
+
+.border-grey {
+  border: 2px solid #ccc;
+}
+
+.card-font {
+  font-family: Calibri;
+  font-size: 1.8rem;
+}
+
+.card-member-info {
+  padding-left: 50px;
+}
+
+.notas {
+  background: #FA8072;
+  border-radius: 10px;
 }

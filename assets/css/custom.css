@@ -88,6 +88,10 @@
 
 }
 
+.ml-25 {
+  margin-left: 25px;
+}
+
 .pa-icon {
     font-style: normal;
     font-size: 15px !important;
@@ -317,7 +321,7 @@ input:checked + .slider:before {
 .debito {
   padding: 3px;
   border-radius: 8px;
-  margin-left:12px !important;
+  margin-left: 25px !important;
 }
 
 body {
@@ -330,14 +334,28 @@ body {
 
 .card-font {
   font-family: Calibri;
-  font-size: 1.6rem;
+  font-size: 16px;
+  line-height: 16px;
 }
 
-.card-member-info {
+.card-info .header-title {
+  margin-bottom: 0;
+}
+
+/*.card-member-info {
   padding-left: 50px;
 }
-
+*/
 .notas {
   background: #FA8072;
   border-radius: 10px;
+}
+
+.float-left {
+  position: absolute;
+  top: 50px;
+}
+
+.img-circle.bordered {
+  border: 2px solid #333;
 }

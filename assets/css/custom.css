@@ -75,8 +75,8 @@
   }
 
   .no-scroll {
-    height: 100vh;  
-    overflow: hidden;   
+    height: 100vh;
+    overflow: hidden;
   }
 
   .scroll {
@@ -202,12 +202,20 @@ input:checked + .slider:before {
 
 .contact-card .img-wrapper {
   display: block;
-} 
+}
 
 .observations {
   text-align: center;
   background: #ffff99;
+}
 
+.card-box {
+  padding: 15px 15px 5px;
+}
+
+.card-icon.printer {
+  position: absolute;
+  bottom: -40px;
 }
 
 /***
@@ -236,7 +244,7 @@ input:checked + .slider:before {
     background-color: #fff;
     top: 0;
     right: 0;
-  }  
+  }
 }
 
 .b-r-20 {
@@ -287,7 +295,7 @@ input:checked + .slider:before {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  
+
 }
 .select-img {
   background: url(../images/arrow.png) 96% / 15% no-repeat #eee;
@@ -296,7 +304,7 @@ input:checked + .slider:before {
 }
 
 /* CAUTION: IE hackery ahead */
-.select::-ms-expand { 
+.select::-ms-expand {
     display: none; /* remove default arrow on ie10 and ie11 */
 }
 
@@ -305,7 +313,7 @@ input:checked + .slider:before {
     .select {
         background:none\9;
         padding: 5px\9;
-    } 
+    }
 }
 
 .num-pas {
@@ -314,8 +322,8 @@ input:checked + .slider:before {
   width: 80px;
   display: flex;
   align-items: center;
-  justify-content: center;   
-  font-size: 1.95rem; 
+  justify-content: center;
+  font-size: 1.95rem;
 }
 
 .debito {
@@ -353,9 +361,10 @@ body {
 
 .float-left {
   position: absolute;
-  top: 50px;
+  top: 10px;
 }
 
 .img-circle.bordered {
   border: 2px solid #333;
+  background-color: #eee;
 }

@@ -215,7 +215,13 @@ input:checked + .slider:before {
 
 .card-icon.printer {
   position: absolute;
-  bottom: -40px;
+  bottom: -52px;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
 
 /***

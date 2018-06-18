@@ -250,11 +250,16 @@ input:checked + .slider:before {
     background-color: #fff;
     top: 0;
     right: 0;
+    border-radius: 50px;
   }
 }
 
 .b-r-20 {
   border-radius: 20px !important;
+}
+
+.b-r-10 {
+  border-radius: 10px !important;
 }
 
 .card-info {
@@ -292,19 +297,19 @@ input:checked + .slider:before {
 }
 
 .select {
-  margin: 50px;
-  width: 150px;
+  margin: 50px 52px 8px 52px;
+  width: 183px;
   padding: 5px 35px 5px 5px;
   font-size: 13px;
-  border: 1px solid #ccc;
-  height: 34px;
+  border: 2px solid #333;
+  height: 38px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 
 }
 .select-img {
-  background: url(../images/arrow.png) 96% / 15% no-repeat #eee;
+  background: url(../images/arrow.png) 96% / 15% no-repeat;
   /*border-left: 1px solid #333;*/
   /*float: left;*/
 }
@@ -378,4 +383,42 @@ body {
 .red-border {
   border: 1px solid red;
   color: #333;
+}
+
+::placeholder {
+    color: #222 !important;
+    
+}
+
+.bg-light-pink {
+  background: #fbd4b4 !important;
+  color: #000;
+}
+
+#btn-novo-socio {
+  position: relative;
+  overflow: inherit !important;
+}
+
+.m-b-40 {
+  margin-bottom: 40px !important;
+}
+
+#noti-count {
+    position:absolute;
+    top:-15px;
+    right:-15px;
+    background-color:red;
+    color:#fff;
+    padding:5px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    width:30px;
+    height:30px;
+    text-align:center;
+}
+
+#noti-coun span {
+  margin-top: 7px;
 }

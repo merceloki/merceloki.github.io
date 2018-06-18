@@ -406,12 +406,12 @@
         <!-- content -->
       </div>
 
-      <div class="right sidemenu sidebar-left-br">
+      <div class="right sidemenu sidebar-left-br border-dark m-r-5">
         <div class="row">
           <div class="col-sm-12">
             <form role="form">
-              <div class="form-group contact-search m-b-30">
-                <select class="select select-img">
+              <div class="form-group contact-search">
+                <select class="select select-img border-dark">
                   <option selected disabled>Procurar por:</option>
                   <option>Nome</option>
                   <option>Endereço</option>
@@ -421,25 +421,26 @@
                 </select>
               </div>
               <!-- form-group -->
+
+              <div class="form-group col-sm-9 col-sm-offset-2">
+                <input type="text" placeholder="" class="form-control border-dark">
+              
+              </div>
             </form>
           </div>
-
-          <div class="col-sm-8 col-sm-offset-2">
-            <div class="form-group">
-              <input type="text" placeholder="Buscar" class="form-control">
-              
-            </div>
+            
           </div>
 
           <div class="bottom-sidebar ">
             <div class="col-sm-12">
               <div class="center-block text-center">
-                <a href="#custom-modal" class=" btn red-border btn-md waves-effect waves-light m-b-30 btn-block" data-animation="fadein" data-plugin="custommodal"
-                data-overlaySpeed="200" data-overlayColor="#36404a"><!-- <i class="md md-add"></i> -->1 Novos Socios</a>
+                <a id="btn-novo-socio" href="#custom-modal" class="b-r-10 btn btn-md waves-effect waves-light m-b-30  bg-light-pink" data-animation="fadein" data-plugin="custommodal"
+                data-overlaySpeed="200" data-overlayColor="#36404a">Novos Socios <span id="noti-count"><span>9</span></span></a>
 
-                <button class="btn btn-block m-b-20">Email</button>
                 <div class=" center-block m-b-10 p-5">Sócios adimplentes</div>
-                <div class="num-pas border-dark center-block text-darker">20</div>
+                <div class="num-pas border-dark center-block text-darker m-b-40">20</div>
+                <button class="btn b-r-10 m-b-20">Email</button>
+
               </div>
             </div>
           </div>

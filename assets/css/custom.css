@@ -234,7 +234,17 @@ input:checked + .slider:before {
 .sidemenu.right .bottom-sidebar {
   position: absolute;
   bottom: 30px;
-  left: 19%;
+  left: 45%;
+}
+
+.bs-pas {
+  position: absolute;
+  bottom: 30px;
+}
+
+.center-relative {
+  position: relative; 
+  left: -39%;
 }
 
 @media (min-width:  992px) {
@@ -421,4 +431,11 @@ body {
 
 #noti-coun span {
   margin-top: 7px;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }

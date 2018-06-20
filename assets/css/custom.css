@@ -105,6 +105,12 @@
   width: 60px;
   height: 34px;
 }
+.switch.menor {
+  width: 52px;
+  height: 20px;
+  display: block;
+  margin: auto;
+}
 
 /* Hide default HTML checkbox */
 .switch input {display:none;}
@@ -132,6 +138,11 @@
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
+}
+
+.slider.menor:before {
+  height: 12px;
+  width: 12px;
 }
 
 input:checked + .slider {
@@ -438,4 +449,36 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.btn-70 img {
+  width: 40px;
+  height: 40px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.btn-70 {
+  width: 70px !important;
+  height: 70px !important;
+}
+
+.bg-orange {
+  background: #e36c0a;
+}
+
+.bg-wine {
+  background: #660033;
+}
+
+.lateral-printer {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+}
+
+.lateral-printer img {
+  width: 40px;
+  height: 40px;
+  margin: auto;
 }

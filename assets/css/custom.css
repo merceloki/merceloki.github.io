@@ -16,6 +16,10 @@
   margin: auto;
 }
 
+.badge-danger {
+  background-color: #e36c0a;
+}
+
 .custom-row {
   height: 50vh;
 	display: flex;
@@ -146,11 +150,11 @@
 }
 
 input:checked + .slider {
-  background-color: #e36c0a;
+  background-color: #09D261;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #e36c0a;
+  box-shadow: 0 0 1px #09D261;
 }
 
 input:checked + .slider:before {

@@ -230,7 +230,7 @@ input:checked + .slider:before {
 
 .card-icon.printer {
   position: absolute;
-  bottom: -38px;
+  bottom: -40px;
 }
 
 .vcenter {

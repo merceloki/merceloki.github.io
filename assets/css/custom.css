@@ -55,6 +55,13 @@
   color: white;
 }
 
+/**
+ * PA Overlay
+ */
+.card-box.pa .overlay {
+  position: initial;
+}
+
 .portlet-body-socio-cidade-fix {
   height: 46vh;
 }

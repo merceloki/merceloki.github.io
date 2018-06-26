@@ -106,6 +106,8 @@ File: Chartjs
 
         this.respChart($("#lineChart"),'Line',lineChart, lineOpts);
         this.respChart($("#lineChartAdimplente"),'Line',lineChart, lineOpts);
+        // this.respChart($("#lineChartPa"),'Line',lineChart, lineOpts);
+
 
 
         //donut chart

@@ -68,6 +68,14 @@
   position: initial;
 }
 
+.overlay-search {
+  display: none;
+}
+
+.overlay-search.on {
+  display: block;
+}
+
 .portlet-body-socio-cidade-fix {
   height: 46vh;
 }

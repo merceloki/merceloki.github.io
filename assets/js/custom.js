@@ -70,8 +70,11 @@ $("#pa-search").on('click', function() {
 	event.preventDefault();
 	/* Act on the event */
 	$(this).closest('.card-box').find('.overlay').css('display', 'none');
-	$(this).closest('.chart').find("overlay").css('display', 'block');
+	$(this).closest('.card-box').find(".overlay-search").css('display', 'block');
 });
 
-
+$(".num-pas").on('click', function() {
+	$(this).closest('.card-box').find('.overlay-search').css('display', 'none');
+	$(this).closest('.card-box').find(".overlay").css('display', 'block');	
+});
 })(jQuery); // Fully reference jQuery after this point.

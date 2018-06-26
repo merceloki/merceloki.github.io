@@ -4,6 +4,10 @@
   position: relative;
 }
 
+.m-r-0 {
+  margin-right: 0 !important;
+}
+
 .overlay {
   display: none;
   background-color: #d8d8d8;
@@ -38,7 +42,9 @@
 .visto-input::placeholder {
   color: #ccc !important;
 }
-
+.chart .overlay {
+  display: none;
+}
 .overlay .inner-div .visto-circle {
   width: 50px;
   height: 50px;
@@ -342,7 +348,7 @@ input:checked + .slider:before {
 }
 
 .b-r-20 {
-  border-radius: 20px !important;
+  border-radius: 20px;
 }
 
 .b-r-10 {
@@ -537,13 +543,13 @@ body {
   background: #660033;
 }
 
-.lateral-printer {
+.small-box {
   width: 60px;
   height: 60px;
   border-radius: 8px;
 }
 
-.lateral-printer img {
+.small-box img {
   width: 40px;
   height: 40px;
   margin: auto;

@@ -76,6 +76,14 @@
   display: block;
 }
 
+.card-box-table {
+  display: none;
+}
+
+table thead th {
+  text-align: center;
+}
+
 .portlet-body-socio-cidade-fix {
   height: 46vh;
 }

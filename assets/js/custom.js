@@ -1,6 +1,6 @@
 (function($) {
 
-$(".switch input[type='checkbox']").on('click', function() {
+$(".switch.socio input[type='checkbox']").on('click', function() {
 	if($(this).is(":checked")) {
 		$(this).closest('.card-box').find('.overlay').css('display', 'block');
 	}
@@ -70,8 +70,32 @@ $("#pa-search").on('click', function() {
 	event.preventDefault();
 	/* Act on the event */
 	$(this).closest('.card-box').find('.overlay').css('display', 'none');
-	$(this).closest('.chart').find("overlay").css('display', 'block');
+	$(this).closest('.card-box').find(".overlay-search").css('display', 'block');
+	$('#inner-chart-info-switch').prop('checked', true);
 });
 
+$('#inner-chart-info-switch').on('click', function() {
+	if (! $(this).is(':checked')) {
+		$(this).closest('.card-box').find('.overlay').css('display', 'block');
+		$(this).closest('.card-box').find(".overlay-search").css('display', 'none');		
+	}
+});
 
+$(".num-pas").on('click', function() {
+	$(this).closest('.card-box').find('.overlay-search').css('display', 'none');
+	$(this).closest('.card-box').find(".overlay").css('display', 'block');	
+});
+
+$("#chart-pa-switch").on('click', function(e) {
+	// e.preventDefault();
+	console.log('here');
+
+	if ($(this).is(':checked')) {
+		$(this).closest('.card-info').find('.card-box.widget').css('display', 'none');
+		$(this).closest('.card-info').find('.card-box-table').css('display', 'block');	
+	} else {
+		$(this).closest('.card-info').find('.card-box.widget').css('display', 'block');
+		$(this).closest('.card-info').find('.card-box-table').css('display', 'none');	
+	}
+});
 })(jQuery); // Fully reference jQuery after this point.

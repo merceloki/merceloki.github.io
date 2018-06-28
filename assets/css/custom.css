@@ -114,6 +114,9 @@ table thead th {
 	flex-direction: column;
 }
 
+
+
+
 .flot-chart {
 	width: 50%;
 }
@@ -602,4 +605,9 @@ body {
 
 .m-l-0{
   margin-left: 0px !important;
+}
+
+.col-centered{
+float: none;
+margin: 0 auto;
 }

@@ -611,3 +611,16 @@ body {
 float: none;
 margin: 0 auto;
 }
+
+.c-m-l-13 {
+  margin-left: 13% !important;
+}
+
+.m-t--50{
+  margin-top: -50px;
+}
+
+.c-wrapper {
+  position: relative;
+  top: 80px;
+}

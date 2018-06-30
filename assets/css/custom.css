@@ -409,7 +409,7 @@ input:checked + .slider:before {
 }
 
 .select {
-  margin: 50px 52px 8px 52px;
+  margin: 20px 52px 8px 52px;
   width: 183px;
   padding: 5px 35px 5px 5px;
   font-size: 13px;
@@ -514,6 +514,21 @@ body {
 
 .m-b-40 {
   margin-bottom: 40px !important;
+}
+
+#pa-count {
+    position:absolute;
+    top:110px;
+    /*right:-15px;*/
+    background-color:red;
+    color:#fff;
+    padding:5px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    width:30px;
+    height:30px;
+    text-align:center;
 }
 
 #noti-count {
@@ -623,4 +638,8 @@ margin: 0 auto;
 .c-wrapper {
   position: relative;
   top: 80px;
+}
+
+.bg-yellow {
+  background: yellow;
 }

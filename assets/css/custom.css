@@ -378,7 +378,7 @@ input:checked + .slider:before {
   border: 2px solid #333;
   /*margin: 0 auto;*/
   border-radius: 8px;
-  padding: 8px;
+  padding: 11px;
   display: inline-block;
   margin-bottom: -2px;
 }
@@ -642,4 +642,16 @@ margin: 0 auto;
 
 .bg-yellow {
   background: yellow;
+}
+
+.color-blue {
+  color: #362AB5;
+}
+
+.bg-light-blue {
+  background: #daeef3;
+}
+
+.m-b--20{
+  margin-bottom: -20px;
 }

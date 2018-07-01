@@ -23,29 +23,6 @@ $(".inner-div .visto-input").on("keyup", function() {
 });
 
 
-// PAS
-// $(".pa .switch.on input[type='checkbox']").on('click', function() {
-// 	if($(this).is(":checked")) {
-
-// 		$(this).closest('.card-box').find('.overlay').css('display', 'block');
-// 		$(this).closest('.contact-card').css('display', 'none');
-// 		$(this).closest('.pa').find('.switch.off input[type="checkbox"]').removeAttr('checked');
-// 		$(this).closest('.card-box').find('.overlay').css('background-color', 'white');
-// 		$(".switch input[type='checkbox']").attr('checked');
-// 	}
-// }); 
-
-// $(".pa .switch.off input[type='checkbox']").on('click', function() {
-// 	if($(this).is(":checked")) {
-// 		$(this).closest('.card-box').find('.overlay').css('display', 'none');
-// 		$(this).closest('.card-box').find('.contact-card').css('display', 'block');
-// 		// $(this).closest('.card-box').find('.switch').removeProp('checked');
-// 		$(this).closest('.pa').find('.switch.on input[type="checkbox"]').removeAttr('checked');
-// 		// console.log('lala');
-// 	}
-
-// }); 
-
 
 $("#nome-pa-switch").on('click', function() {
 	event.preventDefault();

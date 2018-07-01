@@ -22,6 +22,15 @@ $(".inner-div .visto-input").on("keyup", function() {
 	}
 });
 
+$("#pago-input").on("keyup", function() {
+	var str = $(this).val().toLowerCase();
+	if (str == 'pago') {
+		$(this).parent('.inner-div').find('.visto-circle').css('display', 'flex');
+	} else {
+		$(this).parent('.inner-div').find('.visto-circle').css('display', 'none');		
+	}
+});
+
 
 
 $("#nome-pa-switch").on('click', function() {
@@ -74,5 +83,16 @@ $("#chart-pa-switch").on('click', function(e) {
 		$(this).closest('.card-info').find('.card-box.widget').css('display', 'block');
 		$(this).closest('.card-info').find('.card-box-table').css('display', 'none');	
 	}
+});
+
+$('#pago-switch').on('click', function() {
+	$(this).closest('.card-box').css('height', '50vh');
+});
+
+$(".pagamento .fa-close").on('click', function(e) {
+	e.preventDefault();
+	$(this).closest('.card-box').css('height', 'initial');
+	$(this).closest('.card-box').find('.overlay').css('display', 'none');
+	$(".switch input[type='checkbox']").removeAttr('checked');
 });
 })(jQuery); // Fully reference jQuery after this point.

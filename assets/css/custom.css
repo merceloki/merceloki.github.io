@@ -224,7 +224,7 @@ table thead th {
   content: "";
   height: 26px;
   width: 26px;
-  left: 4px;
+  left: 1px;
   bottom: 4px;
   background-color: white;
   -webkit-transition: .4s;
@@ -664,7 +664,7 @@ margin: 0 auto;
 .price-tag {
   color: white;
   position: absolute;
-  top: 15%; 
+  top: 30px; 
   right: -130px;
 }
 
@@ -698,4 +698,8 @@ margin: 0 auto;
   position: absolute;
   left: 0;
   right: 0;
+}
+
+.bg-grey {
+  background: #ccc;
 }

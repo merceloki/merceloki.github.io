@@ -691,7 +691,7 @@ margin: 0 auto;
   content: "";
   position: absolute;
   height: 5px;
-  border-top: 5px solid orange;
+  border-top: 5px solid #E36C0A;
   top: 0;
   width: 46px;
 }

@@ -665,18 +665,8 @@ margin: 0 auto;
   color: white;
   position: absolute;
   left: 110%;
-
+  top: 15%; 
 }
-
-/*.price-tag:before {
-    border-top: 2px solid orange;
-    content:"";
-    margin: 0 auto;
-    position: absolute;
-    top: 15px; left: 0; right: 0; bottom: 0;
-    width: 95%;
-    z-index: -1;
-}*/
 
 .price-tag {
   line-height: 0.5;
@@ -684,7 +674,8 @@ margin: 0 auto;
 }
 .price-tag span {
   display: inline-block;
-  position: relative;  
+  position: relative;
+
 }
 .price-tag span:before {
   content: "";

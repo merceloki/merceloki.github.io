@@ -692,7 +692,7 @@ margin: 0 auto;
   height: 5px;
   border-top: 5px solid #E36C0A;
   top: 0;
-  width: 46px;
+  width: 190%;
 }
 .price-tag span:before {
   right: 100%;

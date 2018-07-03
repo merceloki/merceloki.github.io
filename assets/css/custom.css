@@ -664,8 +664,8 @@ margin: 0 auto;
 .price-tag {
   color: white;
   position: absolute;
-  left: 110%;
   top: 15%; 
+  right: -130px;
 }
 
 .price-tag {
@@ -683,7 +683,7 @@ margin: 0 auto;
   height: 5px;
   border-top: 5px solid #E36C0A;
   top: 0;
-  width: 175%;
+  width: 60px;
 }
 .price-tag span:before {
   right: 100%;
@@ -694,7 +694,8 @@ margin: 0 auto;
 }
 
 .back-pag {
-  bottom: -300%;
-    position: absolute;
-    left: 20%;
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
 }

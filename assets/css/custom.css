@@ -701,6 +701,10 @@ margin: 0 auto;
 }
 .price-tag span:after {
   left: -205%;
-  /*margin-left: 15px;*/
-  /*border-right: 0px;*/
+}
+
+.back-pag {
+  bottom: -250%;
+    position: absolute;
+    left: 20%;
 }

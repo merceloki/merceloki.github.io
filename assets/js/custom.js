@@ -86,7 +86,7 @@ $("#chart-pa-switch").on('click', function(e) {
 });
 
 $('#pago-switch').on('click', function() {
-	$(this).closest('.card-box').css('height', '50vh');
+	$(this).closest('.card-box').css('height', '30vh');
 });
 
 $(".pagamento .fa-close").on('click', function(e) {

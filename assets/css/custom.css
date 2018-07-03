@@ -657,8 +657,8 @@ margin: 0 auto;
 }
 
 .small-ball {
-  height: 60px;
-  width: 60px;
+  height: 70px;
+  width: 70px;
 }
 
 .price-tag {
@@ -692,7 +692,7 @@ margin: 0 auto;
   height: 5px;
   border-top: 5px solid #E36C0A;
   top: 0;
-  width: 190%;
+  width: 175%;
 }
 .price-tag span:before {
   right: 100%;

@@ -655,3 +655,52 @@ margin: 0 auto;
 .m-b--20{
   margin-bottom: -20px;
 }
+
+.small-ball {
+  height: 60px;
+  width: 60px;
+}
+
+.price-tag {
+  color: white;
+  position: absolute;
+  left: 110%;
+
+}
+
+/*.price-tag:before {
+    border-top: 2px solid orange;
+    content:"";
+    margin: 0 auto;
+    position: absolute;
+    top: 15px; left: 0; right: 0; bottom: 0;
+    width: 95%;
+    z-index: -1;
+}*/
+
+.price-tag {
+  line-height: 0.5;
+  text-align: center;
+}
+.price-tag span {
+  display: inline-block;
+  position: relative;  
+}
+.price-tag span:before,
+.price-tag span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-top: 5px solid orange;
+  top: 0;
+  width: 46px;
+}
+.price-tag span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.price-tag span:after {
+  left: -205%;
+  /*margin-left: 15px;*/
+  /*border-right: 0px;*/
+}

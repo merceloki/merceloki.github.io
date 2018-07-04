@@ -709,7 +709,7 @@ margin: 0 auto;
  * Pagamentos Page
  */
 
-.pagamentos .box .card-center {
+.historico .box .card-center {
   max-width: 90%;
   text-align: center;
   background-color: #daeef3;
@@ -717,20 +717,20 @@ margin: 0 auto;
   color: #170de3;
 }
 
-.pagamentos .box .card-center .price-tag {
+.historico .box .card-center .price-tag {
   right: -110px;
   background-color: #daeef3;
   border: 3px solid #170de3;
   color: #170de3;
 }
 
-.pagamentos .box .card-center .price-tag span:before {
+.historico .box .card-center .price-tag span:before {
   width: 40px;
   border-top: none;
   border-bottom: 3px solid #170de3;;
 }
 
-.pagamentos .box .card-center .circle {
+.historico .box .card-center .circle {
   width: 70px;
   height: 70px;
   line-height: 80px;
@@ -740,13 +740,13 @@ margin: 0 auto;
   position: relative;
 }
 
-.pagamentos .box .card-center .circle i {
-  font-size: 90px;
+.historico .box .card-center .circle i {
+  font-size: 73px;
   position: absolute;
-  top: -20px;
+  top: -3px;
   left: 0;
 }
 
-.sidemenu-pagamentos .back-pag i {
+.sidemenu-historico .back-pag i {
   font-size: 100px;
 }

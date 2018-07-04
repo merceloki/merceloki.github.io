@@ -703,3 +703,50 @@ margin: 0 auto;
 .bg-grey {
   background: #ccc;
 }
+
+
+/*
+ * Pagamentos Page
+ */
+
+.pagamentos .box .card-center {
+  max-width: 90%;
+  text-align: center;
+  background-color: #daeef3;
+  border: 3px solid #170de3;
+  color: #170de3;
+}
+
+.pagamentos .box .card-center .price-tag {
+  right: -110px;
+  background-color: #daeef3;
+  border: 3px solid #170de3;
+  color: #170de3;
+}
+
+.pagamentos .box .card-center .price-tag span:before {
+  width: 40px;
+  border-top: none;
+  border-bottom: 3px solid #170de3;;
+}
+
+.pagamentos .box .card-center .circle {
+  width: 70px;
+  height: 70px;
+  line-height: 80px;
+  border-radius: 50%;
+  border: 3px solid #170de3;
+  margin: 20px auto;
+  position: relative;
+}
+
+.pagamentos .box .card-center .circle i {
+  font-size: 90px;
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
+
+.sidemenu-pagamentos .back-pag i {
+  font-size: 100px;
+}

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/images/favicon_1.ico">
     <title>Pontos de Associação</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link href="assets/plugins/custombox/css/custombox.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
@@ -23,7 +26,7 @@
   </head>
   <body class="widescreen fixed-left-void  no-scroll">
     <!-- Begin page -->
-    <div id="wrapper" class="enlarged forced bg-white">
+    <div id="wrapper" class="enlarged forced bg-white pagamentos">
       <!-- Top Bar Start -->
       <!-- Top Bar End -->
       <!-- ========== Left Sidebar Start ========== -->
@@ -72,128 +75,87 @@
               </div>
             </div>
             <div class="flex-container">
-            <div class="box">
+
+              <div class="box col-sm-3">
                 <div class="card-box  card-center card-center b-r-20 border-dark card-font m-b-20 pagamento">
-                  <div class="num-pas bg-orange pull-right small-ball price-tag">
-                      <span style="margin-right: 2px;">$ 20</span>
-                      
-                    </div>
+                  <div class="num-pas pull-right small-ball price-tag">
+                    <span style="margin-right: 2px;">$ 20</span>
+                  </div>
                   <div class="contact-card">
-                    <div class="m-t-5 float-left text-center">
-                      <span class="badge badge-xs badge-danger m-t-10" style="font-size: 15px;">PAGO</span>
-                        
-                        <label class="switch socio menor m-t-5" style="display: block;">
-                        <input type="checkbox" id="pago-switch">
-                        <span class="slider round menor"></span>
-                      </label>
-                    </div>
-
-                    
-
-                    <div class="card-member-info m-b-10  clearfix text-center">
-                      <div class="row">
-                        <div class="col-md-4"></div>
-
-                        <div class="col-xs-12 col-xs-offset-2">
-                          <div class="row">
-                            <div class="col-xs-8 card-pa" style="height: inherit;">
-                              <div class="m-t-0  text-darker"> NOME DO PA</div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-xs-12 col-xs-offset-2 m-b-10 c-m-l-13">
-                            <div class="row">
-                              <div class="col-xs-3 card-info no-right-border">
-                                <div class="text-dark ">
-                                  <small class="text-darker"></small>
-                                </div>
-                              </div>
-                              <div class="col-xs-3 card-info x-left-border no-right-border">
-                                <div class="text-dark ">
-                                  <small class="text-darker"></small>
-                                </div>
-                              </div>
-                              <div class="col-xs-3 card-info x-left-border">
-                                <div class="text-dark ">
-                                  <small class="text-darker"></small>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                        <div class="col-xs-12">
-                          <div class="row">
-                             <div class="col-xs-2 col-centered">
-                                <img src="assets/images/print.png" class=" card-icon m-b--20 center-block" alt="">
-                             </div>
-                          </div>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-                  <div class="overlay">
-                    <div class="inner-div">
-                      <i class="fa fa-close pull-right m-r-10" style="cursor: pointer;"></i>
-                      <input type="text" id="pago-input" placeholder="pago" class="visto-input form-control border-dark">
-                      <div class="visto-circle ">OK</div>               
+                    <div class="pa-name">Nome do PA</div>
+                    <div class="circle">
+                      <i class="material-icons">done</i>
                     </div>
                   </div>
-
-                  </div>
-                  
                 </div>
               </div>
-              <!-- end col -->
-              
-              
-              
 
-             
+              <div class="box col-sm-3 col-sm-offset-1">
+                <div class="card-box  card-center card-center b-r-20 border-dark card-font m-b-20 pagamento">
+                  <div class="num-pas pull-right small-ball price-tag">
+                    <span style="margin-right: 2px;">$ 20</span>
+                  </div>
+                  <div class="contact-card">
+                    <div class="pa-name">Nome do PA</div>
+                    <div class="circle">
+                      <i class="material-icons">done</i>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-
+              <div class="box col-sm-3 col-sm-offset-1">
+                <div class="card-box  card-center card-center b-r-20 border-dark card-font m-b-20 pagamento">
+                  <div class="num-pas pull-right small-ball price-tag">
+                    <span style="margin-right: 2px;">$ 20</span>
+                  </div>
+                  <div class="contact-card">
+                    <div class="pa-name">Nome do PA</div>
+                    <div class="circle">
+                      <i class="material-icons">done</i>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- container -->
-        </div>
-        <!-- content -->
-      </div>
-
-      <div class="right sidemenu sidebar-left-br border-dark m-r-5">
-        <div class="row">
-          <div class="col-sm-12">
-            <form role="form ">
-                <div class="num-pas center-block bg-wine small-box m-b-20">
-                    <img src="assets/images/print-white.png" alt="">
-                    <span id="noti-count" style="right: 35%;"><!-- <span>9</span> --></span>
-                </div>
-              <!-- form-group -->
-              <span class="center-block text-center">Nome do PA</span>
-              <div class="form-group col-sm-9 col-sm-offset-2">
-                <input type="text" placeholder="" class="m-b-40 form-control border-dark">
-                <button class="btn b-r-10 p-10 color-blue bg-light-blue m-t-20">Historico</button>
-                
-              </div>
-            </form>
-          </div>
-            
-          </div>
-          <a href="pas.html" class="bg-grey back-pag num-pas border-dark center-block text-darker m-b-40">
-              <img src="assets/images/left-arrow.png" alt="" style="width: 100px;height: 100px;">
-          </a>
+          <!-- end col -->         
         </div>
       </div>
-
-     
+      <!-- container -->
+    </div>
+    <!-- content -->
+    </div>
+    <div class="right sidemenu sidemenu-pagamentos sidebar-left-br border-dark m-r-5">
+      <div class="row">
+        <div class="col-sm-12">
+          <form role="form ">
+            <div class="num-pas center-block bg-wine small-box m-b-20">
+              <img src="assets/images/print-white.png" alt="">
+              <span id="noti-count" style="right: 35%;">
+                <!-- <span>9</span> -->
+              </span>
+            </div>
+            <!-- form-group -->
+            <span class="center-block text-center">Nome do PA</span>
+            <div class="form-group col-sm-9 col-sm-offset-2">
+              <input type="text" placeholder="" class="m-b-40 form-control border-dark">
+              <button class="btn b-r-10 p-10 color-blue bg-light-blue m-t-20">Historico</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <a href="pas.html" class="bg-grey back-pag num-pas border-dark center-block text-darker m-b-40">
+      <img src="assets/images/left-arrow.png" alt="" style="width: 100px;height: 100px;">
+      <!-- <i class="material-icons">navigate_before</i> -->
+      </a>
+    </div>
+    </div>
     </div>
     <!-- END wrapper -->
     <script>
       var resizefunc = [];
     </script>
-
-
     <!-- jQuery  -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -215,6 +177,5 @@
     <!-- Modal-Effect -->
     <script src="assets/plugins/custombox/js/custombox.min.js"></script>
     <script src="assets/plugins/custombox/js/legacy.min.js"></script>
-
   </body>
 </html>

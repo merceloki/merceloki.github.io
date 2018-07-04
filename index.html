@@ -6,7 +6,6 @@
     <link rel="shortcut icon" href="assets/images/favicon_1.ico">
     <title>Dashboard</title>
     <link href="assets/plugins/jquery-circliful/css/jquery.circliful.css" rel="stylesheet" type="text/css" />
-
     <!--Morris Chart CSS -->
     <link rel="stylesheet" href="assets/plugins/morris/morris.css">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -28,7 +27,6 @@
     <!-- Begin page -->
     <div id="wrapper" class="enlarged forced">
       <!-- Top Bar Start -->
-    
       <!-- Top Bar End -->
       <!-- ========== Left Sidebar Start ========== -->
       <div class="left side-menu">
@@ -36,9 +34,8 @@
           <!--- Divider -->
           <div id="sidebar-menu" style="height: 100%;">
             <ul class="menu-spaced">
-              <li class="m-b-0" ><!--  style="margin-top: -70%;" -->
+              <li class="m-b-0" >
                 <a href="javascript:void(0);" class="waves-effect"><i class="ti-power-off"></i></a>
-               
               </li>
               <li class="has_sub ">
                 <a href="/" class="waves-effect menu-item"><i class="ti-bar-chart menu-icon"></i> <span> Dashboard </span> <span class="menu-arrow"></span></a>
@@ -49,15 +46,12 @@
               <li class="has_sub ">
                 <a href="socios.html" class="waves-effect menu-item"><i class="fa fa-users menu-icon"></i> <span> UI Kit </span> <span class="menu-arrow"></span> </a>
                 <ul class="list-unstyled">
-
                 </ul>
               </li>
               <li class="has_sub">
                 <a href="pas.html" class="waves-effect menu-item"><i class="pa-icon menu-icon">PA'S</i></span><span> Pontos de Associação </span> </a>
-      
-                </ul>
-              </li>
-        
+            </ul>
+            </li>
             <div class="clearfix"></div>
           </div>
           <div class="clearfix"></div>
@@ -71,7 +65,6 @@
         <!-- Start content -->
         <div class="content">
           <div class="container">
-
             <div class="row custom-row grid-wrapper">
               <div class="col-md-2 grid-item">
                 <div class="widget-bg-color-icon card-box fadeInDown animated widget">
@@ -89,14 +82,12 @@
                   <div class="clearfix"></div>
                 </div>
               </div>
-
               <!-- Donut Chart -->
               <div class="col-md-4">
                 <div class="portlet">
                   <!-- /primary heading -->
                   <div class="portlet-heading">
                     <h3 class="portlet-title text-dark">Pontos de Associação(ranking)</h3>
-
                   </div>
                   <div id="portlet3" class="panel-collapse collapse in">
                     <div class="portlet-body">
@@ -104,25 +95,21 @@
                         <div id="donut-chart-container" class="flot-chart" style="height: 41vh;">
                         </div>
                       </div>
-                        <!-- <div id="center"></div> -->
-                     
                     </div>
                   </div>
                 </div>
                 <!-- /Portlet -->
               </div>
               <!-- Donut Chart -->
-
               <div class="col-md-4">
                 <div class="portlet" >
                   <!-- /primary heading -->
                   <div class="portlet-heading">
                     <h3 id="pontoAssocTitle" class="portlet-title text-dark ">Pontos de Associação(ranking/Mês) </h3>
                     <h3 id="socioCidadeTitle" class="portlet-title text-dark">Sócios por cidade</h3>
-
                     <label class="switch pull-right">
-                        <input type="checkbox" id="donut2switch" style="margin-bottom: 5px;">
-                        <span class="slider round"></span>
+                    <input type="checkbox" id="donut2switch" style="margin-bottom: 5px;">
+                    <span class="slider round"></span>
                     </label>
                   </div>
                   <div id="portlet4" class="panel-collapse collapse in">
@@ -135,25 +122,17 @@
                           <li>
                             <i class="fa fa-circle m-r-5" style="color: #09d261;"><span class="text-dark custom-legend">Adimplencia</span></i>
                           </li>
-                          
-                         
                         </ul>
                       </div>
                       <div id="donut-chart" class="">
-                        
                         <div id="donut-chart-container2" class="flot-chart" style="height: 41vh;">
                         </div>
-                      <!-- <div id="bar-chart-socio-cidade" class="" style="height: 37vh;margin-top: 25px;"></div> -->
-
-                      <div id="morris-bar-stacked-socio-por-cidade" class="" style="height: 36vh;margin-top: 5px;"></div>
-
-
+                        <div id="morris-bar-stacked-socio-por-cidade" class="" style="height: 36vh;margin-top: 5px;"></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
               <div class="col-md-2">
                 <div class="widget-bg-color-icon card-box fadeInDown animated widget">
                   <div class="text-center">
@@ -165,20 +144,14 @@
                   </div>
                   <div class="clearfix"></div>
                 </div>
-
                 <div class="card-box widget">
                   <div class="widget-chart text-center">
                     <div class="text-muted mb-card-title m-t-5">Meios de Associação(%)</div>
                     <input class="knob" data-width="80" data-height="85" data-linecap=round data-fgColor="#5fbeaa" value="60" data-skin="tron" data-angleOffset="180" data-readOnly=true data-thickness=".15"/> 
                   </div>
                 </div>
-
               </div>
-               <!--  <div class="col-md-2">
-                
-                </div> -->
               <!-- /Portlet -->
-
             </div>
             <!-- end row -->  
             <div class="row custom-row">
@@ -202,10 +175,10 @@
                     <h4 id="planosMaisVendidosTitle" class="portlet-title text-dark header-title m-t-0">Planos mais vendidos(PA)</h4>
                     <h4 id="socioAdimpMesTitle" class="portlet-title text-dark header-title m-t-0">Socios adimplentes(mes)</h4>
                     <label class="switch pull-right" style="margin-top: -5px;">
-                        <input type="checkbox" id="donut1switch">
-                        <span class="slider round"></span>
-                      </label>
-                    </div>
+                    <input type="checkbox" id="donut1switch">
+                    <span class="slider round"></span>
+                    </label>
+                  </div>
                   <div id="planosMaisVendidosLegenda" class="text-center">
                     <ul class="list-inline chart-detail-list">
                       <li>
@@ -223,12 +196,9 @@
                     </ul>
                   </div>
                   <div id="morris-bar-stacked" class="item" style="height: 20vh;"></div>
-                  <!-- <div id="bar-chart-socio-mes" style="height: 20vh;"></div> -->
                   <canvas id="lineChartAdimplente" class="item" height="225vh"></canvas>
                 </div>
               </div>
-
-
               <div class="col-md-3">
                 <div class="card-box widget">
                   <h4 class="text-dark header-title m-t-0">Socios Associados</h4>
@@ -242,10 +212,8 @@
                   <div class="portlet-heading ">
                     <h3 class="portlet-title text-dark " style="margin-top: -6px;"> Planos mais comprados </h3>
                   </div>
-                 
                   <div class="circliful-chart circliful item" data-dimension="150" data-text="72%" data-info="" data-width="30" data-fontsize="24" data-percent="72" data-fgcolor="#7266ba" data-bgcolor="#ebeff2"></div>
-                
-                 </div>
+                </div>
                 <!-- /Portlet -->
               </div>
               <!-- end col -->
@@ -255,120 +223,11 @@
           <!-- container -->
         </div>
         <!-- content -->
-   
       </div>
       <!-- ============================================================== -->
       <!-- End Right content here -->
       <!-- ============================================================== -->
       <!-- Right Sidebar -->
-      <div class="side-bar right-bar nicescroll">
-        <h4 class="text-center">Chat</h4>
-        <div class="contact-list nicescroll">
-          <ul class="list-group contacts-list">
-            <li class="list-group-item">
-              <a href="#">
-                <div class="avatar">
-                  <img src="assets/images/users/avatar-1.jpg" alt="">
-                </div>
-                <span class="name">Chadengle</span>
-                <i class="fa fa-circle online"></i>
-              </a>
-              <span class="clearfix"></span>
-            </li>
-            <li class="list-group-item">
-              <a href="#">
-                <div class="avatar">
-                  <img src="assets/images/users/avatar-2.jpg" alt="">
-                </div>
-                <span class="name">Tomaslau</span>
-                <i class="fa fa-circle online"></i>
-              </a>
-              <span class="clearfix"></span>
-            </li>
-            <li class="list-group-item">
-              <a href="#">
-                <div class="avatar">
-                  <img src="assets/images/users/avatar-3.jpg" alt="">
-                </div>
-                <span class="name">Stillnotdavid</span>
-                <i class="fa fa-circle online"></i>
-              </a>
-              <span class="clearfix"></span>
-            </li>
-            <li class="list-group-item">
-              <a href="#">
-                <div class="avatar">
-                  <img src="assets/images/users/avatar-4.jpg" alt="">
-                </div>
-                <span class="name">Kurafire</span>
-                <i class="fa fa-circle online"></i>
-              </a>
-              <span class="clearfix"></span>
-            </li>
-            <li class="list-group-item">
-              <a href="#">
-                <div class="avatar">
-                  <img src="assets/images/users/avatar-5.jpg" alt="">
-                </div>
-                <span class="name">Shahedk</span>
-                <i class="fa fa-circle away"></i>
-              </a>
-              <span class="clearfix"></span>
-            </li>
-            <li class="list-group-item">
-              <a href="#">
-                <div class="avatar">
-                  <img src="assets/images/users/avatar-6.jpg" alt="">
-                </div>
-                <span class="name">Adhamdannaway</span>
-                <i class="fa fa-circle away"></i>
-              </a>
-              <span class="clearfix"></span>
-            </li>
-            <li class="list-group-item">
-              <a href="#">
-                <div class="avatar">
-                  <img src="assets/images/users/avatar-7.jpg" alt="">
-                </div>
-                <span class="name">Ok</span>
-                <i class="fa fa-circle away"></i>
-              </a>
-              <span class="clearfix"></span>
-            </li>
-            <li class="list-group-item">
-              <a href="#">
-                <div class="avatar">
-                  <img src="assets/images/users/avatar-8.jpg" alt="">
-                </div>
-                <span class="name">Arashasghari</span>
-                <i class="fa fa-circle offline"></i>
-              </a>
-              <span class="clearfix"></span>
-            </li>
-            <li class="list-group-item">
-              <a href="#">
-                <div class="avatar">
-                  <img src="assets/images/users/avatar-9.jpg" alt="">
-                </div>
-                <span class="name">Joshaustin</span>
-                <i class="fa fa-circle offline"></i>
-              </a>
-              <span class="clearfix"></span>
-            </li>
-            <li class="list-group-item">
-              <a href="#">
-                <div class="avatar">
-                  <img src="assets/images/users/avatar-10.jpg" alt="">
-                </div>
-                <span class="name">Sortino</span>
-                <i class="fa fa-circle offline"></i>
-              </a>
-              <span class="clearfix"></span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- /Right-bar -->
     </div>
     <!-- END wrapper -->
     <script>
@@ -397,21 +256,15 @@
     <script src="assets/plugins/jquery.easy-pie-chart/dist/easypiechart.min.js"></script>
     <script src="assets/plugins/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
     <script src="assets/pages/easy-pie-chart.init.js"></script>
-
     <script src="assets/plugins/jquery-knob/jquery.knob.js"></script>
-    
     <script src="assets/js/jquery.core.js"></script>
     <script src="assets/js/jquery.app.js"></script>
-    
     <!-- MORRIS CHART -->
     <script src="assets/plugins/morris/morris.min.js"></script>
     <script src="assets/plugins/raphael/raphael-min.js"></script>
     <!-- <script src="assets/pages/morris.init.js"></script> -->
     <script src="assets/pages/jquery.dashboard.js"></script>
-    
-   
     <script src="assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script> 
-    
     <!-- FLOT JS -->
     <script src="assets/plugins/flot-chart/jquery.flot.min.js"></script>
     <script src="assets/plugins/flot-chart/jquery.flot.time.js"></script>
@@ -424,50 +277,43 @@
     <script src="assets/plugins/flot-chart/jquery.flot.crosshair.js"></script>
     <script src="assets/pages/jquery.flot.init.js"></script>
     <script src="assets/pages/jquery.flot2.init.js"></script>
-
-
-
-
-
-
-<script type="text/javascript" charset="utf-8" async defer>
-  jQuery(document).ready(function(){
-    $('#morris-bar-stacked-socio-por-cidade').hide();
-    $('#donut2switch').click(function(){
-        $('#morris-bar-stacked-socio-por-cidade, #donut-chart-container2').toggle();
-    });
-
-    $('#socioCidadeTitle').hide();
-    $('#donut2switch').click(function(){
-        $('#socioCidadeTitle, #pontoAssocTitle').toggle();
-    });
-
-    $('#socioPorCidadeLegenda').hide();
-    $('#donut2switch').click(function(){
-        $('#socioPorCidadeLegenda').toggle();
-    });
-
-
-    $('#lineChartAdimplente').hide();
-    $('#donut1switch').click(function(){
-        $('#lineChartAdimplente, #morris-bar-stacked').toggle();
-    });
-
-    $('#socioAdimpMesTitle').hide();
-    $('#donut1switch').click(function(){
-        $('#planosMaisVendidosTitle, #socioAdimpMesTitle').toggle();
-    });
-
-
-    $('#donut1switch').click(function(){
-        $('#planosMaisVendidosLegenda').toggle();
-    });
-
-
-  });
-</script>
-
-<!--     <script type="text/javascript">
+    <script type="text/javascript" charset="utf-8" async defer>
+      jQuery(document).ready(function(){
+        $('#morris-bar-stacked-socio-por-cidade').hide();
+        $('#donut2switch').click(function(){
+            $('#morris-bar-stacked-socio-por-cidade, #donut-chart-container2').toggle();
+        });
+      
+        $('#socioCidadeTitle').hide();
+        $('#donut2switch').click(function(){
+            $('#socioCidadeTitle, #pontoAssocTitle').toggle();
+        });
+      
+        $('#socioPorCidadeLegenda').hide();
+        $('#donut2switch').click(function(){
+            $('#socioPorCidadeLegenda').toggle();
+        });
+      
+      
+        $('#lineChartAdimplente').hide();
+        $('#donut1switch').click(function(){
+            $('#lineChartAdimplente, #morris-bar-stacked').toggle();
+        });
+      
+        $('#socioAdimpMesTitle').hide();
+        $('#donut1switch').click(function(){
+            $('#planosMaisVendidosTitle, #socioAdimpMesTitle').toggle();
+        });
+      
+      
+        $('#donut1switch').click(function(){
+            $('#planosMaisVendidosLegenda').toggle();
+        });
+      
+      
+      });
+    </script>
+    <!--     <script type="text/javascript">
       jQuery(document).ready(function($) {
           $('.counter').counterUp({
               delay: 100,
@@ -477,7 +323,7 @@
           $(".knob").knob();
       
       });
-    </script> -->
+      </script> -->
     <script src="assets/plugins/jquery-circliful/js/jquery.circliful.min.js"></script>
     <script>
       $(function() {
